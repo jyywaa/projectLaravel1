@@ -12,7 +12,7 @@ return new class extends Migration
             $table->id();
             $table->string('code')->unique();
             $table->string('item_name');
-            $table->integer('kategori_id');
+            $table->string('category');
             $table->integer('stock');
             $table->enum('condition', ['baik', 'rusak ringan', 'rusak parah'])->default('baik');
             $table->string('room_location')->nullable();
